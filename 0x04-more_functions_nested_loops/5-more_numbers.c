@@ -6,11 +6,13 @@
  *
  * Return: Always 0.
  */
-void more_numbers(void) {
+void more_numbers(void) 
+{
 	int i = 0;
 	int first;
 	int second;
 	int results = 0;
+
 	while (i < 10)
 	{
 		while (results <= 14)
@@ -25,8 +27,8 @@ void more_numbers(void) {
 				second = results % 10;
 				_putchar(first + '0');
 			}
-			_putchar(second +'0');
-			results ++;
+			_putchar(second + '0');
+			results++;
 		}
 		i++;
 		results = 0;
