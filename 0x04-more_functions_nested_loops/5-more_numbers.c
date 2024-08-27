@@ -7,10 +7,32 @@
  * return: Always 0.
  */
 
-void more_numbers(void) {
-	int i;
-	for(i = 0; i<15; i++){
-		_putchar("\n", i)
+void more_numbers(void)
+{
+	int i = 0;
+	int first;
+	int second;
+	int results = 0;
+
+	while (i < 0) 
+	{
+		while (results <= 14)
+		{
+			if (results< 10)
+			{
+				second = results;
+			}
+			else
+			{
+				first = results / 10;
+				second = results % 10;
+				_putchar(first + '0';
+			}
+			_putchar(second + '0';
+			results ++;
+		}
+		i++
+		results = 0;
+		_putchar('\n')
 	}
-	_putchar("\n")
 }
