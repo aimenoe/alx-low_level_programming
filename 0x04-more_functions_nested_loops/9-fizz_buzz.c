@@ -23,10 +23,6 @@ int main(void)
 		{
 			printf("%s", "Buzz");
 		}
-		else if (i == 1)
-		{
-			printf("%d", i);
-		}
 		else
 		{
 			printf("%d", i);
