@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * Fizz Buzz printing
+ * Fizz Buzz - Printing fizz buzz when the number is  divisible by 3, 5 or 15
  * Return: Always 0.
  */
 int main(void)
