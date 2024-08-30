@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * Fizz Buzz printing
  * Return: Always 0.
@@ -29,5 +28,5 @@ int main(void)
 		}
 	}
 	printf("\n");
-	return 0;
+	return (0);
 }
