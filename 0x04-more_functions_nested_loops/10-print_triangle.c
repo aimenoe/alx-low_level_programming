@@ -2,7 +2,6 @@
 /**
  * Print_triangle - printing triangle shaped with #.
  * @size: The size of the #.
- 
  * Return: Always 0.
  */
 void print_triangle(int size)
