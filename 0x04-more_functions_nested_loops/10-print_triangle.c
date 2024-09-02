@@ -1,9 +1,8 @@
 #include "main.h"
 /**
- * Printing - printing triangle shaped with #
- * @size: The size of the #
- * @i: Initial range
- * @j: Limit range
+ * Print_triangle - printing triangle shaped with #.
+ * @size: The size of the #.
+ 
  * Return: Always 0.
  */
 void print_triangle(int size)
