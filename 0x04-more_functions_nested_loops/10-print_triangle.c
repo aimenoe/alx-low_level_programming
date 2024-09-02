@@ -7,7 +7,7 @@
  * @j: Limit range
  * Return: Always 0.
  */
-int print_triangle(size)
+void print_triangle(size)
 {
 	if (size <= size)
 	{
