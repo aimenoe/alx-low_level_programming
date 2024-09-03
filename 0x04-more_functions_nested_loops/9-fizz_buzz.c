@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * Fizz Buzz - Printing fizz buzz when the number is  divisible by 3, 5 or 15
+ * Fizz-Buzz - Printing fizz buzz when the number is  divisible by 3, 5 or 15.
  * Return: Always 0.
  */
 int main(void)
@@ -19,7 +19,7 @@ int main(void)
 		}
 		else if (i % 5 == 0)
 		{
-			printf("Buzz ");
+			printf("Buzz");
 		}
 		else
 		{
