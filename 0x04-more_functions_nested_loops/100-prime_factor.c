@@ -1,15 +1,14 @@
 #include <stdio.h>
 #include <math.h>
 /**
- * Prime factor - printing the largest factor number of the input number.
- * @n: input
+ * main - printing the largest factor number of the input number.
  * Return: Always 0.
  */
-int main()
+int main(void)
 {
 	long n = 612852475143;
 	long i;
-	long largest_number = 0;
+	long largest_number = -1;
 
 	while (n % 2 == 0)
 	{
