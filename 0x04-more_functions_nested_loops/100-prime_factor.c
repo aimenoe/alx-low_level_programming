@@ -2,14 +2,13 @@
 #include <math.h>
 /**
  * main - printing the largest factor number of the input number.
- * @n: input
  * Return: Always 0.
  */
 int main(void)
 {
 	long n = 612852475143;
 	long i;
-	long largest_number = 0;
+	long largest_number = -1;
 
 	while (n % 2 == 0)
 	{
