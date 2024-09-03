@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <math.h>
 /**
- * Prime factor - printing the largest factor number of the input number.
+ * main - printing the largest factor number of the input number.
  * @n: input
  * Return: Always 0.
  */
-int main()
+int main(void)
 {
 	long n = 612852475143;
 	long i;
