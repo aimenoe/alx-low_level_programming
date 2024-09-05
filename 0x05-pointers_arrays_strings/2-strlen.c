@@ -1,5 +1,5 @@
 #include "main.h"
-#incude <stdio.h>
+#include <stdio.h>
 /**
  * strlen - prints the length of the file.
  * @s: input value.
