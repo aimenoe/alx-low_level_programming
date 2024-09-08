@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdioh>
+#include <stdio.h>
 /**
  * print_rev - print the string in reverse way
  * @s: string coontainer
