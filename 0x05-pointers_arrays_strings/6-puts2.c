@@ -1,5 +1,5 @@
-#inculde "main.h"
-#incude <stdio.h>
+#include "main.h"
+#include <stdio.h>
 /**
  * Puts2 - prints the first letter of the word.
  * @str: contains string
