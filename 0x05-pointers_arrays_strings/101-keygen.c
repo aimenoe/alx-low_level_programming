@@ -8,8 +8,10 @@
 int main(void)
 {
 	int i;
-	char charset[] = "abcdefghijklmnopqrstuvwxyz1234567890";
+	const char charset[] = "abcdefghijklmnopqrstuvwxyz1234567890";
 	char password[9];
+
+	srand(time(NULL));
 
 	for (i = 0; i < 8; i++)
 	{
