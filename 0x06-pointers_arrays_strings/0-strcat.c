@@ -6,7 +6,7 @@
  * @src: sources pointer
  * Return: Return concatenated strin
  */
-char *strcat(char *dest, char *src)
+char *_strcat(char *dest, char *src)
 {
 	char *s = dest;
 
