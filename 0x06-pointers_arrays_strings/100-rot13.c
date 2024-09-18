@@ -5,7 +5,7 @@
  * @c: contains string to be encoded
  * Return: encoded string
  */
-char *rot13(char *c)
+void *rot13(char *c)
 {
 	int i;
 	int j;
