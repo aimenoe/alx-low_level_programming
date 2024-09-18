@@ -21,7 +21,7 @@ char *cap_string(char *c)
 			}
 			else
 			{
-				for (j = 0; j < sizeof(s) - 1; j++)
+				for (j = 0; j <= 12; j++)
 				{
 					if (s[j] == c[i - 1])
 					{
