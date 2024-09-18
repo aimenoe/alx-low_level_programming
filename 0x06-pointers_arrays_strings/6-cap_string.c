@@ -8,7 +8,7 @@
 char *cap_string(char *c)
 {
 	int i = 0;
-	int j;
+	size_t j;
 	char s[] = ",;.!?(){}\n\t\"";
 
 	while (c[i])
@@ -21,7 +21,7 @@ char *cap_string(char *c)
 			}
 			else
 			{
-				for (j = 0; j <= 12; j++)
+				for (j = 0; j < sizeof(s) - 1; j++)
 				{
 					if (s[j] == c[i - 1])
 					{
