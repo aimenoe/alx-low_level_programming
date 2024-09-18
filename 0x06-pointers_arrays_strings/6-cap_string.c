@@ -11,21 +11,22 @@ char *cap_string(char *c)
 	int j;
 	char s[] = ",;.!?(){}\n\t\"";
 
-	while (*(c + i))
+	while (c[i])
 	{
-		if (*(c + i) >= 'a' && *(c + i) <= 'z')
+		if (c[i] >= 'a' && c[i] <= 'z')
 		{
 			if (i == 0)
 			{
-				*(c + i) -= 'a' - 'A';
+				c[i] -= 'a' - 'A';
 			}
 			else
 			{
-				for (j = 0; j <= 12; j++)
+				for (j = 0; j < sizeof(s) - 1; j++)
 				{
-					if (s[j] == *(c + i -1))
+					if (s[j] == c[i - 1])
 					{
-						*(c + i) -= 'a' - 'A';
+						c[i] -= 'a' - 'A';
+						break;
 					}
 				}
 			}
