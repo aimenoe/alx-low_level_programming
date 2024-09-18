@@ -12,7 +12,7 @@ char *cap_string(char *c)
 	int k;
 	char s[] = ",;.!?(){}\n\t\"";
 
-	for (i = 0; j = 0; c[i] != '\0'; i++)
+	for (i = 0, j = 0; c[i] != '\0'; i++)
 	{
 		if (c[0] >= 96 && c[0] <= 123)
 		{
