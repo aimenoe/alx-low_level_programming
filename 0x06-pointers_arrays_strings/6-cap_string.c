@@ -7,40 +7,30 @@
  */
 char *cap_string(char *c)
 {
-	int i;
+	int i = 0;
 	int j;
-	int k;
 	char s[] = ",;.!?(){}\n\t\"";
 
-	for (i = 0, j = 0; c[i] != '\0'; i++)
+	while (*(c + i))
 	{
-		if (c[0] > 96 && c[0] < 123)
+		if (*(c + i) >= 'a' && *(c + i) <= 'z')
 		{
-			j = 1;
-		}
-		for (k = 0; s[k] != '\0'; k++)
-		{
-			if (s[k] == c[i])
+			if (i = 0)
 			{
-				j = 1;
+				*(c + i) -= 'a' - 'A';
 			}
-		}
-		if (j)
-		{
-			if (c[i] > 96 && c[i] < 123)
+			else
 			{
-				c[i] -= 32;
-				j = 0;
-			}
-			else if (c[i] > 64 && c[i] < 91)
-			{
-				j = 0;
-			}
-			else if (c[i] > 47 && c[i] < 58)
-			{
-				j = 0;
+				for (j = 0; j <= 12; j++)
+				{
+					if (s[j] == *(c + i -1))
+					{
+						*(c + i) -= 'a' - 'A';
+					}
+				}
 			}
 		}
+		i++
 	}
 	return (c);
 }
