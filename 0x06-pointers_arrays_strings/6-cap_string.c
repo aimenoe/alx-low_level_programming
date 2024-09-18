@@ -36,7 +36,7 @@ char *cap_string(char *c)
 			{
 				j = 0;
 			}
-			else if (c[i] > 47 && c[i] < 59)
+			else if (c[i] > 47 && c[i] < 58)
 			{
 				j = 0;
 			}
