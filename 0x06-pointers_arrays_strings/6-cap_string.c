@@ -17,7 +17,7 @@ char *cap_string(char *c)
 		{
 			if (i == 0)
 			{
-				c[i] -= 'a' - 'A';
+				c[i] = c[i] - 'a' + 'A';
 			}
 			else
 			{
@@ -25,7 +25,7 @@ char *cap_string(char *c)
 				{
 					if (s[j] == c[i - 1])
 					{
-						c[i] -= 'a' - 'A';
+						c[i] = c[i] - 'a' + 'A';
 						break;
 					}
 				}
