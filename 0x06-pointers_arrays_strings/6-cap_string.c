@@ -14,7 +14,7 @@ char *cap_string(char *c)
 
 	for (i = 0, j = 0; c[i] != '\0'; i++)
 	{
-		if (c[0] >= 96 && c[0] <= 123)
+		if (c[0] > 96 && c[0] < 123)
 		{
 			j = 1;
 		}
@@ -27,16 +27,16 @@ char *cap_string(char *c)
 		}
 		if (j)
 		{
-			if (c[i] >= 96 && c[i] <= 123)
+			if (c[i] > 96 && c[i] < 123)
 			{
 				c[i] -= 32;
 				j = 0;
 			}
-			else if (c[i] >= 64 && c[i] <= 91)
+			else if (c[i] > 64 && c[i] < 91)
 			{
 				j = 0;
 			}
-			else if (c[i] >= 47 && c[i] <= 59)
+			else if (c[i] > 47 && c[i] < 59)
 			{
 				j = 0;
 			}
