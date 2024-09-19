@@ -10,6 +10,7 @@ void print_buffer(char *b, int size)
 {
 	int i, j, k;
 
+	i = 0;
 	if (size <= 0)
 	{
 		printf("\n");
@@ -34,7 +35,7 @@ void print_buffer(char *b, int size)
 		{
 			int c = *(b + i + k);
 
-			if (c < 32 || c > 132)
+			if (c < 32 || c > 126)
 			{
 				c = '.';
 			}
