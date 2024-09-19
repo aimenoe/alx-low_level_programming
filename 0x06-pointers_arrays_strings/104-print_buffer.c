@@ -3,7 +3,7 @@
 /**
  * print_buffer - print a buffer
  * @b: buffer pointer
- * @sizze: size of buffer
+ * @size: size of buffer
  * Return: return buffer
  */
 void print_buffer(char *b, int size)
