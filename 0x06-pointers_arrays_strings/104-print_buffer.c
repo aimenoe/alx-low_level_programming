@@ -42,7 +42,7 @@ void print_buffer(char *b, int size)
 				printf(" ");
 				if (k % 2 == 1)
 				{
-					prinf(" ");
+					printf(" ");
 				}
 			}
 		}
