@@ -35,6 +35,17 @@ void print_buffer(char *b, int size)
 				printf(" ");
 			}
 		}
+		if (j < 10)
+		{
+			for (k = j; k < 10; k++)
+			{
+				printf(" ");
+				if (k % 2 == 1)
+				{
+					prinf(" ");
+				}
+			}
+		}
 		for (k = 0; k < j; k++)
 		{
 			int c = *(b + i + k);
