@@ -30,13 +30,13 @@ void print_buffer(char *b, int size)
 				printf(" ");
 			}
 		}
-		for (k = 0; k < j; K++)
+		for (k = 0; k < j; k++)
 		{
 			int c = *(b + i + k);
 
 			if (c < 32 || c > 132)
 			{
-				c = ".";
+				c = '.';
 			}
 			printf("%c", c);
 		}
